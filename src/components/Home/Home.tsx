@@ -1,5 +1,10 @@
+import Spinner from "../plugins/Spinner/Spinner";
 const Home = () => {
-    return <h1>Home</h1>;
+    return (
+        <>
+            <Spinner />
+        </>
+    );
 };
 
 export default Home;
