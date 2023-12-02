@@ -1,0 +1,28 @@
+/* src/styles/NotFound.css */
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  background-image: url('../../images/404_Not_Found.gif');
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
