@@ -83,7 +83,7 @@ const Spinner: React.FC = () => {
         <div style={{ display: 'flex', width: '100vw' }}>
             <h2>Spinner Creator</h2>
 
-            <div className="left" style={{ border: '1px solid #ddd', padding: '10px', borderRadius: '5px', minWidth: '40%', maxWidth: '40%' }}>
+            <div className="left" >
                 <SpinnerWrapper {...spinnerAttributes} />
                 <div>
                     <label>Size:</label>
@@ -131,7 +131,7 @@ const Spinner: React.FC = () => {
                     />
                 </div>
             </div>,
-            <div className='right' style={{ display: 'flex', flexFlow: 'column', minWidth: '60%' }}>
+            <div className='right'>
                 <h3>Generated Code</h3>
                 <HtmlBox> {htmlCode}</HtmlBox>
                 <pre style={{ border: '1px solid #ddd', padding: '10px', borderRadius: '5px' }}>{cssCode}</pre>
