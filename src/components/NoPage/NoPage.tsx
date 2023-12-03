@@ -26,7 +26,7 @@ const NoPage = () => {
             <div className="not-found-container">
                 <h1>404 - Not Found</h1>
                 <p>Sorry, the page you are looking for might be in another castle.</p>
-                <LinkButton href="/home">Back to Home</LinkButton>
+                <LinkButton href="./home">Back to Home</LinkButton>
             </div>
         </animated.div>
     );

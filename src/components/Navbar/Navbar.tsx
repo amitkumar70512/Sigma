@@ -52,10 +52,10 @@ const Navbar: React.FC = () => {
         <NavbarContainer>
             <NavbarLogo>Logo</NavbarLogo>
             <NavbarLinks isMobileMenuOpen={isMobileMenuOpen}>
-                <NavbarLink href="/home">Home</NavbarLink>
-                <NavbarLink href="/about">About</NavbarLink>
-                <NavbarLink href="/services">Services</NavbarLink>
-                <NavbarLink href="/contact">Contact</NavbarLink>
+                <NavbarLink href="./home">Home</NavbarLink>
+                <NavbarLink href="./about">About</NavbarLink>
+                <NavbarLink href="./services">Services</NavbarLink>
+                <NavbarLink href="./contact">Contact</NavbarLink>
             </NavbarLinks>
             <button onClick={toggleMobileMenu}>Toggle Menu</button>
         </NavbarContainer>
