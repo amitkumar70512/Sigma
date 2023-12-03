@@ -13,7 +13,7 @@ const SearchInput = styled.input`
   padding: 20px;
   font-size: 20px;
 
-  width: 40%; // Use 100% width to expand to the full width of the container
+  width: 30%; // Use 100% width to expand to the full width of the container
   border: none;
   border-bottom: 1px solid #023240;
   outline: none;
