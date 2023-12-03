@@ -32,6 +32,8 @@ const SpinnerWrapper = styled.div<SpinnerAttributes>`
 	border: 4px solid ${({ color }) => color};
 	border-top: 4px solid ${({ background }) => background};
 	border-radius: 50%;
+    align-self: center;
+    margin: 20px 0px;
 	animation: ${rotateAnimation} ${({ speed }) => speed}s linear infinite;
 `;
 
@@ -92,7 +94,7 @@ const Spinner: React.FC = () => {
 				<Left>
 					<SpinnerWrapper {...spinnerAttributes} />
 					<div>
-						<label>Size:</label>
+						<label>Size: </label>
 						<SizeInput
 							type='range'
 							min={20}
@@ -107,7 +109,7 @@ const Spinner: React.FC = () => {
 						/>
 					</div>
 					<div>
-						<label>Color:</label>
+						<label>Color: </label>
 						<input
 							type='color'
 							value={spinnerAttributes.color}
@@ -117,7 +119,7 @@ const Spinner: React.FC = () => {
 						/>
 					</div>
 					<div>
-						<label>Background:</label>
+						<label>Background: </label>
 						<input
 							type='color'
 							value={spinnerAttributes.background}
@@ -130,7 +132,7 @@ const Spinner: React.FC = () => {
 						/>
 					</div>
 					<div>
-						<label>Speed:</label>
+						<label>Speed: </label>
 						<SpeedInput
 							type='range'
 							min={0.1}
