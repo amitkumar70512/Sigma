@@ -2,11 +2,8 @@
 import React, { useState, ChangeEvent } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { HtmlBox } from '../../Styles/HtmlBox';
-import { Toolbox } from '../../Styles/Toolbox';
-import { ToolboxRow } from '../../Styles/ToolboxRow';
+import { Toolbox, ToolboxRow, Left, Right } from '../../Styles/Toolbox';
 import { CssBox } from '../../Styles/CssBox';
-import { Right } from '../../Styles/Right';
-import { Left } from '../../Styles/Left';
 
 interface SpinnerAttributes {
 	size: number;
@@ -42,7 +39,7 @@ const Spinner: React.FC = () => {
 	// State to manage spinner attributes
 	const [spinnerAttributes, setSpinnerAttributes] =
 		useState<SpinnerAttributes>({
-			size: 50,
+			size: 100,
 			color: '#3498db',
 			background: '#fff',
 			speed: 1,
@@ -64,7 +61,7 @@ const Spinner: React.FC = () => {
 		const { size, color, background, speed } = spinnerAttributes;
 
 		const htmlCode = `
-      <div style="width: ${size}px; height: ${size}px; border: 4px solid ${color}; border-top: 4px solid ${background}; border-radius: 50%; animation: spin ${speed}s linear infinite;"></div>
+      <div class="spinner"></div>
     `;
 
 		const cssCode = `
@@ -149,7 +146,6 @@ const Spinner: React.FC = () => {
 						/>
 					</div>
 				</Left>
-				,
 				<Right>
 					<h3>Generated Code</h3>
 					<HtmlBox> {htmlCode}</HtmlBox>

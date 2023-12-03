@@ -2,5 +2,9 @@ import styled from 'styled-components';
 
 export const CssBox = styled.pre`
   width: auto;
-  white-space: wrap;
+  white-space: pre-wrap;
+  padding: 5px;
+  color: rgba(10, 180, 10, 1);
+  font-weight: 600;
+  font-size: 14px;
 `;
