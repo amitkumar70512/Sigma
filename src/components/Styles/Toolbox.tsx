@@ -5,7 +5,7 @@ export const Toolbox = styled.div`
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 1rem;
-	max-width: 90vw;
+	width: 90vw;
 	background-color: #eed;
 	margin: 5px auto;
 	border-radius: 5px;
@@ -24,7 +24,6 @@ export const Toolbox = styled.div`
 export const ToolboxRow = styled.div`
     display: flex;
     flex-direction: row;
-    height: 100%;
     max-width: 100%;
     justify-content: space-between;
     padding: 0 10px;
@@ -33,9 +32,16 @@ export const ToolboxRow = styled.div`
 export const Left = styled.div`
     display: flex;
     flex-direction: column;
-    width: 33%;
+    width: 30%;
     border: 1px solid #aaa;
     border-radius: 5px;
+    padding: 10px;
+
+    div {
+        margin: 3px 10px;
+        line-height: 2;
+        text-align: left;
+    }
 `;
 
 export const Right = styled.div`
@@ -47,5 +53,6 @@ export const Right = styled.div`
     border-radius: 5px;
     h3 {
         margin: 20px 0 0 30px;
+        font-size: 18px;
     }
 `;
