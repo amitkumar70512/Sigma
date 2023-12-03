@@ -1,7 +1,7 @@
 // src/components/Spinner.tsx
 import React, { useState, ChangeEvent } from 'react';
 import styled, { keyframes } from 'styled-components';
-import HtmlCss from '../../Styles/HtmlCss';
+import { HtmlBox } from '../../Styles/HtmlBox';
 
 interface SpinnerAttributes {
     size: number;
@@ -133,7 +133,7 @@ const Spinner: React.FC = () => {
             </div>,
             <div className='right' style={{ display: 'flex', flexFlow: 'column', minWidth: '60%' }}>
                 <h3>Generated Code</h3>
-                <pre  ><HtmlCss /> {htmlCode}</pre>
+                <HtmlBox> {htmlCode}</HtmlBox>
                 <pre style={{ border: '1px solid #ddd', padding: '10px', borderRadius: '5px' }}>{cssCode}</pre>
             </div>
         </div>
