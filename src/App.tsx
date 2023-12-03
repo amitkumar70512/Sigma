@@ -6,7 +6,7 @@ import NoPage from "./components/NoPage/NoPage";
 export default function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/home" element={<Home />} />
       {/* <Route path="/about" component={About} /> */}
       <Route path="*" element={<NoPage />} />
     </Routes>
