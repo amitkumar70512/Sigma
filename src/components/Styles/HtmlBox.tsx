@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-export const HtmlBox = styled.div`
+export const HtmlBox = styled.pre`
   width: auto;
-  height: 100px;
   background-color: transparent;
 `;
