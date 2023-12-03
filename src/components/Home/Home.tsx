@@ -1,8 +1,14 @@
+import Navbar from "../Navbar/Navbar";
+import { ContainerBox } from "../Styles/ContainerBox";
 import Spinner from "../plugins/Spinner/Spinner";
+
 const Home = () => {
     return (
         <>
-            <Spinner />
+            <Navbar />
+            <ContainerBox>
+                <Spinner />
+            </ContainerBox>
         </>
     );
 };
