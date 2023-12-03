@@ -3,15 +3,13 @@ import styled from 'styled-components';
 export const Toolbox = styled.div`
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	padding: 1rem;
-	width: 90vw;
+	width: 90%;
 	background-color: #eed;
-	margin: 5px auto;
+	margin: auto;
 	border-radius: 5px;
-	transition: box-shadow 0.3s, border-width 0.3s; /* Add transition for smoother effect */
+	transition: box-shadow 0.3s, border-width 0.3s; 
 
-	/* Initial styles */
 	box-shadow: none;
 	border: 1px solid transparent;
 
@@ -24,15 +22,13 @@ export const Toolbox = styled.div`
 export const ToolboxRow = styled.div`
     display: flex;
     flex-direction: row;
-    max-width: 100%;
     justify-content: space-between;
-    padding: 0 10px;
 `;
 
 export const Left = styled.div`
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 32%;
     border: 1px solid #aaa;
     border-radius: 5px;
     padding: 10px;

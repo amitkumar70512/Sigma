@@ -28,7 +28,6 @@ const SearchInput = styled.input`
 
 const ResponseContainer = styled.div<{ showResponse: boolean }>`
   left: 0;
-  width: 100%;
   background: rgba(255, 255, 255, 0.8);
   border: 1px solid #ccc;
   border-top: none;
